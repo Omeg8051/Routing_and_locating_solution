@@ -1,0 +1,70 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 0.020339142488356388 0.0004749416907968506 3.164482639369023
+  follow "Elisa-3"
+}
+Elisa3 {
+  translation 0.0199998 0 0.000999997
+  rotation -5.01318e-08 -5.01318e-08 1 1.5708
+  controller "<extern>"
+  extensionSlot [
+    Pen {
+      translation 0 0 0.003
+      rotation 0 1 0 0
+      translationStep 0.001
+      inkColor 1 0 0
+      inkDensity 0.4
+      maxDistance 0.1
+    }
+  ]
+}
+Solid {
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "F:/work/schoolProj/PJRoomba/WebotsSim/floorTxt4x4.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 4 4
+      }
+    }
+  ]
+  boundingObject Plane {
+    size 4 4
+  }
+  locked TRUE
+}
+SolidRoundedBox {
+  translation 0 -0.4 0
+  rotation 0 0 1 -0.523595307179586
+  size 0.5 0.3 1
+}
+SolidRoundedBox {
+  translation 0.439999 0.362093 0.03
+  rotation 0 0 1 0.261803
+  name "rounded box(1)"
+  size 0.4 0.7 1
+}
+SolidRoundedBox {
+  translation -0.646852 0.345224 0.03
+  rotation 0 0 1 2.8798
+  name "rounded box(2)"
+  size 0.4 0.5 1
+}
+SpotLight {
+  attenuation 0 0 1
+  beamWidth 0.7
+  intensity 8
+  location 0 0 6
+  castShadows TRUE
+}
