@@ -1,4 +1,4 @@
-# Routing_and_locating_solution
+# Routing and locating solution
 <p>This piece of code is a solution for indoor locationing without the need for lidar. It is written for a 2 wheel differential drive robot to route through a finite indoor space.
 </p>
 <br>
